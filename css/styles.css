@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    color: #191818;
+    background-color: #4e4e4e;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+/* Sections Styling */
+section {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+.slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.slide-up.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/*NEW LOGIC ADD
+/* Navbar styles */
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+    color: black;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: white;
+}
+
+/* Adjust font color when the background changes */
+.navbar.bg-light.scrolled .navbar-brand,
+.navbar.bg-light.scrolled .nav-link {
+    color: black;
+}
+
+.navbar.bg-dark.scrolled .navbar-brand,
+.navbar.bg-dark.scrolled .nav-link {
+    color: white;
+}
+
+
+
